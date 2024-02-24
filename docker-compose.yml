@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  app:
+    build: ./app
+    ports:
+      - "5000:5000"
+    depends_on:
+      - db
+    
+  db:
+    build: ./db
+    environment:
+      MYSQL_ROOT_PASSWORD: senha_teste
+      MYSQL_DATABASE: node_docker
+    ports:
+      - "3306:3306"
+    volumes:
+      - db-data:/var/lib/mysql
+
+volumes:
+  db-data:
