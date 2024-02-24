@@ -38,7 +38,7 @@ Usada nesse projeto: docker network create db-node
 
 
 
-## 3. subir o conteiner com as duas imagens criadas
+## 3. SUBINDO CONTAINER COM AS DUAS IMAGENS CRIADAS
 Iniciar os Contêineres
 Após o build das imagens, você deve iniciar os contêineres usando os comandos docker run mencionados anteriormente. Certifique-se de que os nomes das imagens nos comandos docker run correspondam aos nomes que você usou durante o build.
 
@@ -75,7 +75,7 @@ comando para listar containers --> docker ps
 
 
 
-## 4. Adicionando docker-compose.yml
+## 4. ADICIONANDO docker-compose.yml
 
 docker-compose.yml substitui o docker run 
 
